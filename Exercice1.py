@@ -1,7 +1,7 @@
 # print("Twinkle, twinkle, little star,\n\t\tHow I wonder what you are!\n\t\t Up above the world so high,\n\t\t Like a diamond in the sky. \n Twinkle, twinkle, little star,\n\t How I wonder what you are")
 
 
-### Mini exo 1
+### Mini exo 1-------------------------------------------------------
 
 # def nblettre(mot):
 #     maj = 0
@@ -32,26 +32,56 @@
 #   return upper_count, lower_count
 
 
-### Mini exo 2
+### Mini exo 2-----------------------------------------------------------
 
 
-def maj(phrase) :
-    i = 0
+# def maj(phrase) :
+#     i = 0
     
-    upper_count = 0
-    lower_count = 0
-    while i <=3 :
-        if phrase.isupper():
-            upper_count += 1
-        elif phrase.islower():
-            lower_count += 1
-        i += 1
+#     upper_count = 0
+#     lower_count = 0
+#     while i <=3 :
+#         if phrase[i].isupper():
+#             upper_count += 1
+#         elif phrase[i].islower():
+#            lower_count += 1
+#         i += 1
     
-    if upper_count >= 2 :
-        maj_phrase = phrase.upper()
-        print(maj_phrase)
-    else :
-        print(phrase)
+#     if upper_count >= 2 :
+#         maj_phrase = phrase.upper()
+#         print(maj_phrase)
+#     else :
+#         print(phrase)
  
-phrase = input("Entrez une valeur :")       
-print(maj(phrase))
+# phrase = input("Entrez une valeur :")       
+# print(maj(phrase))
+
+## Correction
+
+# def to_uppercase(string):
+#   upper_count = 0
+#   for i in range(4):
+#     if string[i].isupper():
+#       upper_count += 1
+  
+#   if upper_count >= 2:
+#     return string.upper()
+#   else:
+#     return string
+
+
+# print(to_uppercase("Hello wORld"))
+
+### Mini exo 3 ------------------------------------------
+
+#entrez mot d'une phrase dans une liste a chaque espaces
+
+def listphrase(chaine):
+    liste = []
+    
+    liste.extend(chaine.split())
+    
+    return liste
+    
+chaine = input("valeur =")
+print(listphrase(chaine))
