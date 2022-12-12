@@ -76,12 +76,22 @@
 
 #entrez mot d'une phrase dans une liste a chaque espaces
 
-def listphrase(chaine):
-    liste = []
+# def listphrase(chaine):
+#     liste = []
     
-    liste.extend(chaine.split())
+#     liste.extend(chaine.split())
     
-    return liste
+#     return liste
     
-chaine = input("valeur =")
-print(listphrase(chaine))
+# chaine = input("valeur =")
+# print(listphrase(chaine))
+
+
+### Mini exo 4
+# consonne voyelle
+
+lettre = input('lettre : ')
+if lettre in ('aeiouy') : 
+    print('voyelle')
+else : print('consonne')
+input('_-_')
