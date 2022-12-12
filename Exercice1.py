@@ -88,10 +88,10 @@
 
 
 ### Mini exo 4
-# consonne voyelle
+# fonction liste donne nb le plus grand
 
-lettre = input('lettre : ')
-if lettre in ('aeiouy') : 
-    print('voyelle')
-else : print('consonne')
-input('_-_')
+# def listnb(nb):
+
+#     return max(nb)
+# nb = input("valeur : ")
+# print(listnb(nb))
