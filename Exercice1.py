@@ -11,7 +11,7 @@ valeur = argparse.ArgumentParser(
 
 valeur.add_argument('filename')
 valeur.add_argument('-m', '--message')
-valeur.add_argument('-n', '--nombre', default=5)
+valeur.add_argument('-n', '--nombre', default=5, choices=range(3,15))
 
 args = valeur.parse_args()
 print(args.filename, args.message, args.nombre)
