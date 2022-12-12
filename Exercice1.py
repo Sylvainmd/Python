@@ -6,19 +6,19 @@ import argparse
 
 valeur = argparse.ArgumentParser(
                     prog = "Mon programme",
-                    description = 'Répéter un valeur',
+                    description = 'Répéter une valeur',
                     )
 
 valeur.add_argument('filename')
 valeur.add_argument('-m', '--message')
-valeur.add_argument('-n', '--nombre',type=int, default=5, choices=range(3,15))
+valeur.add_argument('-r', '--repetition',type=int, default=5, choices=range(3,15))
 
 args = valeur.parse_args()
-print(args.filename, args.message, args.nombre)
+print(args.filename, args.message, args.repetition)
 
-nb = int(args.nombre)
+nb = int(args.repetition)
 with open(args.filename, "a") as f:    
-    for i in range(0,int(args.nombre)):
+    for i in range(0,int(args.repetition)):
 
         f.write(args.message)
         nb-=1
