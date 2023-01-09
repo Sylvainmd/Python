@@ -1,0 +1,12 @@
+#Création d'un utilisateur en local : 
+
+New-ADUser -Name "Romain" -Password (ConvertTo-SecureString "" -AsPlainText -Force) -Description "Nouvelle utilisateurs"
+
+
+#Ajout du nouvelle utilisateur admin au groupe administrateur
+
+Get-ADGroup -identity "Utilisateur"
+
+Add-ADGroupMember -Group "grp1" -Member "Romain"
+
+#Utilisateur crée et ajouter au groupe ""
