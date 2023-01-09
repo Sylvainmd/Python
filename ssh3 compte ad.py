@@ -8,8 +8,9 @@ host = "192.168.1.16"
 port = 22
 transport = paramiko.Transport((host, port))
 
-password = "Sylvain$87"
 username = "Sylvain"
+password = "Sylvain$87"
+
 sftp = paramiko.SFTPClient.from_transport(transport)
 
 source_folder = "C:\Users\sylva\OneDrive\Bureau\Scripting systeme\Python\creacompte.txt"
