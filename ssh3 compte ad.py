@@ -10,12 +10,13 @@ transport = paramiko.Transport((host, port))
 
 username = "Sylvain"
 password = "Sylvain$87"
-
+transport.connect(username = username, password = password)
 sftp = paramiko.SFTPClient.from_transport(transport)
 
 source_folder = "C:\Users\sylva\OneDrive\Bureau\Scripting systeme\Python\creacompte.txt"
 inbound_files = sftp.listdir(source_folder)
 
+
 ssh.close()
 
-print("Création utilisateur fini")
+print("Création utilisateur terminé")
